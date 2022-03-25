@@ -17,10 +17,10 @@ let mediaRecorder;
 let recordedBlobs;
 
 const codecPreferences = document.querySelector('#codecPreferences');
-
 const errorMsgElement = document.querySelector('span#errorMsg');
 const recordedVideo = document.querySelector('video#recorded');
 const recordButton = document.querySelector('button#record');
+
 recordButton.addEventListener('click', () => {
     if (recordButton.textContent === 'Start Recording') {
         startRecording();
@@ -174,7 +174,6 @@ async function init(constraints) {
 }
 
 document.querySelector('button#start').addEventListener('click', async () => {
-    alert("hello");
     document.querySelector('button#start').disabled = true;
     document.querySelector('button#stop').disabled = false;
     const hasEchoCancellation = document.querySelector('#echoCancellation').checked;

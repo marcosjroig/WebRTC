@@ -34,8 +34,6 @@
 
     </div>
     
- 
-
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script src="../Scripts/WebRtc/Video.js"></script>
 
