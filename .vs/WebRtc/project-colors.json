@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bbdff39c-c32c-4612-9680-17db69144bce": {
+      "ProjectGuid": "bbdff39c-c32c-4612-9680-17db69144bce",
+      "DisplayName": "WebRtc",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

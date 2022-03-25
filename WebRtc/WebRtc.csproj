@@ -154,9 +154,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Scripts\WebRtc\adapter-latest.js" />
-    <Content Include="Scripts\WebRtc\ga.js" />
-    <Content Include="Scripts\WebRtc\main.js" />
+    <Content Include="Scripts\WebRtc\Video.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />

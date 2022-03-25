@@ -71,4 +71,4 @@ C:\Users\uk-macrcos\source\repos\WebRtc\WebRtc\obj\Debug\WebRtc.csproj.CoreCompi
 C:\Users\uk-macrcos\source\repos\WebRtc\WebRtc\obj\Debug\WebRtc.csproj.CopyComplete
 C:\Users\uk-macrcos\source\repos\WebRtc\WebRtc\obj\Debug\WebRtc.dll
 C:\Users\uk-macrcos\source\repos\WebRtc\WebRtc\obj\Debug\WebRtc.pdb
-C:\Users\uk-macrcos\source\repos\WebRTC\WebRtc\obj\Debug\WebRtc.csproj.AssemblyReference.cache
+C:\Users\uk-macrcos\source\repos\WebRtc\WebRtc\obj\Debug\WebRtc.csprojAssemblyReference.cache
