@@ -127,6 +127,7 @@
     <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\Camara.aspx" />
+    <Content Include="Pages\Foto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -155,6 +156,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\WebRtc\adapter-latest.js" />
     <Content Include="Scripts\WebRtc\Video.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -195,6 +197,13 @@
     </Compile>
     <Compile Include="Pages\Camara.aspx.designer.cs">
       <DependentUpon>Camara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Foto.aspx.cs">
+      <DependentUpon>Foto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Foto.aspx.designer.cs">
+      <DependentUpon>Foto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

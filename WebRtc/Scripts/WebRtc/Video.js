@@ -11,15 +11,23 @@
 
 'use strict';
 
-/* globals MediaRecorder */
-
+//=========================================================================
+/* Variables declaration */
+//=========================================================================
 let mediaRecorder;
 let recordedBlobs;
 
+//Declare HTML elements
 const codecPreferences = document.querySelector('#codecPreferences');
 const errorMsgElement = document.querySelector('span#errorMsg');
 const recordedVideo = document.querySelector('video#recorded');
+
+//Declare Buttons
 const recordButton = document.querySelector('button#record');
+const playButton = document.querySelector('button#play');
+const downloadButton = document.querySelector('button#download');
+
+//=========================================================================
 
 recordButton.addEventListener('click', () => {
     if (recordButton.textContent === 'Start Recording') {
@@ -33,7 +41,7 @@ recordButton.addEventListener('click', () => {
     }
 });
 
-const playButton = document.querySelector('button#play');
+
 playButton.addEventListener('click', () => {
     const mimeType = codecPreferences.options[codecPreferences.selectedIndex].value.split(';', 1)[0];
     const superBuffer = new Blob(recordedBlobs, { type: mimeType });
@@ -44,7 +52,7 @@ playButton.addEventListener('click', () => {
     recordedVideo.play();
 });
 
-const downloadButton = document.querySelector('button#download');
+
 downloadButton.addEventListener('click', () => {
     const blob = new Blob(recordedBlobs, { type: 'video/webm' });
     const url = window.URL.createObjectURL(blob);
