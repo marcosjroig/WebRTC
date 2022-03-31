@@ -7,11 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebRtc
+namespace WebRtc.Pages
 {
 
 
-    public partial class _Default
+    public partial class Camara
     {
+
+        /// <summary>
+        /// btnAggiorna control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAggiorna;
+
+        /// <summary>
+        /// btnTermina control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnTermina;
+
+        /// <summary>
+        /// lblDescrizione control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDescrizione;
     }
 }
