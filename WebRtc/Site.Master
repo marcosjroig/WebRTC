@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <%--<form runat="server">
+   <form runat="server"> <%--
         <asp:ScriptManager runat="server">
             <Scripts>
                 <asp:ScriptReference Name="MsAjaxBundle" />
@@ -42,7 +42,7 @@
             </div>
         </div>
     
-    <%--</form>--%>
+    </form>
 
 </body>
 </html>
