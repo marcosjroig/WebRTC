@@ -24,8 +24,7 @@
             <div id="snapshot"></div>
         </div>
     </div>
-    
-    <%--<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>--%>
+
     <script src="../Scripts/WebRtc/adapter-latest.js"></script>
     
     <script>

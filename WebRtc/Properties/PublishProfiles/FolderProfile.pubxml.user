@@ -5,11 +5,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\roisi\OneDrive\Nixbi\VideoProject\Publish</_PublishTargetUrl>
-    <History>True|2022-03-25T21:13:27.2245009Z;True|2022-03-25T19:11:07.1539919+01:00;True|2022-03-25T18:33:09.1593664+01:00;</History>
+    <History>True|2022-05-03T07:40:42.8111033Z;True|2022-04-19T09:17:08.0591006+02:00;True|2022-04-19T09:16:50.0216075+02:00;True|2022-03-25T22:13:27.2245009+01:00;True|2022-03-25T19:11:07.1539919+01:00;True|2022-03-25T18:33:09.1593664+01:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
       <publishTime>03/25/2022 16:56:48</publishTime>
+    </File>
+    <File Include="app_configuration.json">
+      <publishTime>05/03/2022 08:48:31</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>03/25/2022 16:56:48</publishTime>
@@ -198,10 +201,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/25/2022 16:56:48</publishTime>
     </File>
     <File Include="bin/WebRtc.dll">
-      <publishTime>03/25/2022 22:13:26</publishTime>
+      <publishTime>05/03/2022 09:40:42</publishTime>
     </File>
     <File Include="bin/WebRtc.pdb">
-      <publishTime>03/25/2022 22:13:26</publishTime>
+      <publishTime>05/03/2022 09:40:42</publishTime>
     </File>
     <File Include="Bundle.config">
       <publishTime>03/25/2022 16:56:48</publishTime>
@@ -237,7 +240,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/25/2022 16:56:48</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>03/25/2022 16:56:48</publishTime>
+      <publishTime>03/31/2022 14:35:54</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>03/25/2022 16:56:48</publishTime>
@@ -264,10 +267,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/25/2022 17:20:04</publishTime>
     </File>
     <File Include="Pages/Camara.aspx">
-      <publishTime>03/25/2022 19:10:02</publishTime>
+      <publishTime>05/03/2022 09:08:50</publishTime>
     </File>
     <File Include="Pages/Foto.aspx">
-      <publishTime>03/25/2022 22:12:02</publishTime>
+      <publishTime>04/18/2022 14:55:47</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/25/2022 16:56:48</publishTime>
@@ -362,11 +365,14 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Scripts/WebRtc/adapter-latest.js">
       <publishTime>03/25/2022 18:51:48</publishTime>
     </File>
+    <File Include="Scripts/WebRtc/HelperFunctions.js">
+      <publishTime>05/03/2022 08:15:03</publishTime>
+    </File>
     <File Include="Scripts/WebRtc/Video.js">
-      <publishTime>03/25/2022 20:31:11</publishTime>
+      <publishTime>05/03/2022 09:08:13</publishTime>
     </File>
     <File Include="Site.Master">
-      <publishTime>03/25/2022 22:09:21</publishTime>
+      <publishTime>05/03/2022 09:03:07</publishTime>
     </File>
     <File Include="Site.Mobile.Master">
       <publishTime>03/25/2022 16:56:48</publishTime>
@@ -375,7 +381,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/25/2022 16:56:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/25/2022 18:33:08</publishTime>
+      <publishTime>05/03/2022 09:40:42</publishTime>
     </File>
   </ItemGroup>
 </Project>
