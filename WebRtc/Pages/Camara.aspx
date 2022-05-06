@@ -24,10 +24,10 @@
     <div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-5">
                 <video id="gum" playsinline autoplay muted style="border: 1px solid rgb(15, 158, 238); height: 450px; width: 380px;"></video>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9  col-sm-7">
 
                 <asp:Label ID="lblRisoluzione" runat="server">
                 </asp:Label>
@@ -47,15 +47,12 @@
                 </select><br />
                 <br />
 
-                <button id="record" name="record" disabled class="btn btn-info" onclick="ScattaFotoVideo(); return false;">Scatta foto</button><br />
+                <button id="record" name="record" onclick="ScattaFotoVideo(); return false;">Scatta foto</button><br />
                 <hr />
 
-                <div id="divFotoRecorded">
+                <div id="divFotoVideoRecorded" style ="margin: 0; padding: 0;">
                 </div>
-
-                <div id="divVideoRecorded">
-                </div>
-
+                
             </div>
         </div>
 

@@ -68,9 +68,10 @@ function takeSnapshot() {
     img.src = capture.toDataURL("image/png");
     img.width = 150;
     img.high = 150;
+    img.style.paddingBottom = "13px";
 
     fotoCounter = fotoCounter + 1;
-    $('#divFotoRecorded').append('<span id="snapshot' + fotoCounter + '"></span>');
+    $('#divFotoVideoRecorded').append('<span id="snapshot' + fotoCounter + '"></span><br>');
 
     var snapshot = document.getElementById('snapshot' + fotoCounter);
     snapshot.innerHTML = '';
@@ -86,7 +87,7 @@ function SaveVideoInMemory() {
     videoArray.push(superBuffer);
 
     videoCounter = videoCounter + 1;
-    $('#divVideoRecorded').append('<video id="recorded' + videoCounter +'" playsinline loop style="height: 100px; width: 150px;"></video>');
+    $('#divFotoVideoRecorded').append('<video id="recorded' + videoCounter +'" playsinline loop style="height: 100px; width: 150px; margin:0; padding:0;"></video><br>');
 
     const recordedVideo = document.getElementById('recorded' + videoCounter);
     recordedVideo.src = null;

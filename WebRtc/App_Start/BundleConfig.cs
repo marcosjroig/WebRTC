@@ -28,7 +28,8 @@ namespace WebRtc
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*",
-                            "~/Scripts/jquery-3.4.1.min.js"));
+                            "~/Scripts/jquery-3.4.1.min.js",
+                            "~/Scripts/bootstrap.min.js"));
         }
     }
 }
