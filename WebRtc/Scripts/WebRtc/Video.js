@@ -66,11 +66,12 @@ function takeSnapshot() {
     ctx.drawImage(gum, 0, 0, capture.width, capture.height);
 
     img.src = capture.toDataURL("image/png");
-    img.width = 150;
+    img.width = 130;
     img.high = 150;
     img.style.paddingBottom = "13px";
 
     fotoCounter = fotoCounter + 1;
+    $('#divFotoVideoRecorded').append('<input id="fotoCheckbox' + fotoCounter + '" type="checkbox" checked="checked" style="margin-right: 5px;">');
     $('#divFotoVideoRecorded').append('<span id="snapshot' + fotoCounter + '"></span><br>');
 
     var snapshot = document.getElementById('snapshot' + fotoCounter);
@@ -87,7 +88,10 @@ function SaveVideoInMemory() {
     videoArray.push(superBuffer);
 
     videoCounter = videoCounter + 1;
-    $('#divFotoVideoRecorded').append('<video id="recorded' + videoCounter +'" playsinline loop style="height: 100px; width: 150px; margin:0; padding:0;"></video><br>');
+
+    
+    $('#divFotoVideoRecorded').append('<input id = "videoCheckbox' + videoCounter + '" type = "checkbox" checked = "checked" style="margin-right: 5px; margin-top: -50%; vertical-align: middle;" >');
+    $('#divFotoVideoRecorded').append('<video id="recorded' + videoCounter +'" playsinline loop style="height: 100px; width: 130px; margin:0; padding:0;"></video><br>');
 
     const recordedVideo = document.getElementById('recorded' + videoCounter);
     recordedVideo.src = null;
@@ -101,42 +105,50 @@ async function downloadVideo(){
 
     //Save all videos
     for (let i = 0; i < videoArray.length; i++) {
-        var recordedBufferBase64 = await convertBlobToBase64(videoArray[i]);
-        $.ajax({
-            type: "POST",
-            contentType: "application/json; charset=utf-8",
-            url: "/Pages/Camara.aspx/btnTerminaOnClick",
-            data: '{ "video" : "' + recordedBufferBase64 + '", "videoName" : "video' + i + '.webm"}',
-            datatype: "json",
-            success: function (result) {
-                console.log("SUCCESS = " + result.d);
-                console.log(result);
-            },
-            error: function (xmlhttprequest, textstatus, errorthrown) {
-                console.log(" conection to the server failed ");
-                console.log("error: " + errorthrown);
-            }
-        });
+        var videoCheckbox = $("#videoCheckbox" + (i + 1)).is(":checked");
+
+        if (videoCheckbox == true) {
+            var recordedBufferBase64 = await convertBlobToBase64(videoArray[i]);
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "/Pages/Camara.aspx/btnTerminaOnClick",
+                data: '{ "video" : "' + recordedBufferBase64 + '", "videoName" : "video' + i + '.webm"}',
+                datatype: "json",
+                success: function (result) {
+                    console.log("SUCCESS = " + result.d);
+                    console.log(result);
+                },
+                error: function (xmlhttprequest, textstatus, errorthrown) {
+                    console.log(" conection to the server failed ");
+                    console.log("error: " + errorthrown);
+                }
+            });
+        }
     }
 
     //Save all fotos
     for (let i = 0; i < fotoArray.length; i++) {
-        var foto = fotoArray[i].src.replace("data:image/png;base64,", "");;
-        $.ajax({
-            type: "POST",
-            contentType: "application/json; charset=utf-8",
-            url: "/Pages/Camara.aspx/btnTerminaOnClick2",
-            data: '{ "foto" : "' + foto + '", "fotoName" : "foto' + i + '.png"}',
-            datatype: "json",
-            success: function (result) {
-                console.log("SUCCESS = " + result.d);
-                console.log(result);
-            },
-            error: function (xmlhttprequest, textstatus, errorthrown) {
-                console.log(" conection to the server failed ");
-                console.log("error: " + errorthrown);
-            }
-        });
+        var fotoCheckbox = $("#fotoCheckbox" + (i + 1)).is(":checked");
+
+        if (fotoCheckbox == true) {
+            var foto = fotoArray[i].src.replace("data:image/png;base64,", "");
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "/Pages/Camara.aspx/btnTerminaOnClick2",
+                data: '{ "foto" : "' + foto + '", "fotoName" : "foto' + i + '.png"}',
+                datatype: "json",
+                success: function (result) {
+                    console.log("SUCCESS = " + result.d);
+                    console.log(result);
+                },
+                error: function (xmlhttprequest, textstatus, errorthrown) {
+                    console.log(" conection to the server failed ");
+                    console.log("error: " + errorthrown);
+                }
+            });
+        }
     }
 };
 
